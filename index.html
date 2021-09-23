@@ -1,1 +1,51 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Week 3</title>
+    <style media="screen">
+      h1{
+        color: DodgerBlue;
+      }
+      .ad{
+        color: blue;
+      }
+      .sd{
+        background-color: red;
+      }
+      .ad.sd{
+        font-style:italic;
+      }
+      .descendant li{
+        background-color: AntiqueWhite;
+      }
+      .child>li{
+        background-color: Azure;
+      }
+      .Big{
+        font-size: 20px;
+      }
+      p.Big{
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Instruction 1</h1>
+    <p class="ad">Instruction 2 : class "ad"</p>
+    <p class="sd">Instruction 2 : class "sd"</p>
+    <p class="ad sd">Instruction 2 : class "ad" and "sd"</p>
+    <article class="descendant">
+      <ol class="">
+        <li>Instruction 3: Example of descendant selector case</li>
+      </ol>
+    </article>
+    <article class="">
+      <ol class="child">
+        <li>Instruction 3: Example of child selector case</li>
+      </ol>
+    </article>
+    <h2 class="Big">Instruction 4: used "Big" class in h2</h2>
+    <p class="Big">Instruction 4: used "Big" class in paragraph</p>
+  </body>
+</html>

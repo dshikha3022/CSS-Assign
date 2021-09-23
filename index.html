@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>CSS Week 3</title>
+    <title>CSS Assignment</title>
     <style media="screen">
       h1{
-        color: DodgerBlue;
+        color: darkcyan;
       }
       .ad{
         color: blue;
@@ -17,10 +17,10 @@
         font-style:italic;
       }
       .descendant li{
-        background-color: AntiqueWhite;
+        background-color: gainsboro;
       }
       .child>li{
-        background-color: Azure;
+        background-color: goldenrod;
       }
       .Big{
         font-size: 20px;
@@ -31,21 +31,21 @@
     </style>
   </head>
   <body>
-    <h1>Instruction 1</h1>
-    <p class="ad">Instruction 2 : class "ad"</p>
-    <p class="sd">Instruction 2 : class "sd"</p>
-    <p class="ad sd">Instruction 2 : class "ad" and "sd"</p>
+    <h1>Heading 1</h1>
+    <p class="ad">Using "ad" class</p>
+    <p class="sd">Using "sd" class</p>
+    <p class="ad sd">Using "ad" and "sd" class</p>
     <article class="descendant">
       <ol class="">
-        <li>Instruction 3: Example of descendant selector case</li>
+        <li>This is an example of descendant selector case</li>
       </ol>
     </article>
     <article class="">
       <ol class="child">
-        <li>Instruction 3: Example of child selector case</li>
+        <li>This is an example of child selector case</li>
       </ol>
     </article>
-    <h2 class="Big">Instruction 4: used "Big" class in h2</h2>
-    <p class="Big">Instruction 4: used "Big" class in paragraph</p>
+    <h2 class="Big">Using "Big" class in Heading 2</h2>
+    <p class="Big">Using "Big" class in this paragraph</p>
   </body>
 </html>
